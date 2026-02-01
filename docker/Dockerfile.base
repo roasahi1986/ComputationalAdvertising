@@ -269,6 +269,7 @@ RUN echo "Starting TensorFlow build with BUILD_JOBS=${BUILD_JOBS}..." && \
         --config=mkl \
         --config=nogcp \
         --config=nonccl \
+        --repo_env=USE_PYWRAP_RULES=False \
         --copt=-fpermissive \
         --copt=-Wno-error \
         --copt=-Wno-c23-extensions \
